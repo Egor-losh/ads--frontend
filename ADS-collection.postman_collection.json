@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "14b7f30c-9283-4b54-9905-6055cabbbb1c",
+		"name": "ADS-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ads",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api.php?all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api.php"
+					],
+					"query": [
+						{
+							"key": "all",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ad/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "text",
+							"value": "321321",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "123123",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "123123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/api.php?add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api.php"
+					],
+					"query": [
+						{
+							"key": "add",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "db",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/db.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"db.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
